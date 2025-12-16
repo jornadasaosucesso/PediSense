@@ -1,0 +1,235 @@
+dados_paciente
+ID,nome,data_nasc,filiacaopai,filiacaomae,planosaude,dados_nascimento
+1,"Pedro Henrique Matias","2019-01-05","Roberto Matias","Ana Maria da Silva","Saúde Total Premium","G3P2A1 (Terceira gestação, Segundo parto, Um aborto). Parto Cesárea eletiva, 39 semanas. Apgar: 9/10. Peso: 3.550g. Comprimento: 51cm. Sem intercorrências neonatais."
+2,"Maria Eduarda Silva","2020-03-12","Carlos Silva","Juliana Rocha","Unimed Gold","G2P2. Parto normal, 38 semanas. Apgar: 10/10. Peso: 3.200g. Comprimento: 50cm. Sem intercorrências."
+3,"João Pedro Almeida","2018-07-25","Fernando Almeida","Patrícia Souza","Saúde Mais","G1P1. Parto cesárea, 40 semanas. Apgar: 8/9. Peso: 3.800g. Comprimento: 52cm. Pequena icterícia neonatal."
+4,"Ana Clara Fernandes","2021-11-02","Ricardo Fernandes","Camila Torres","Amil Premium","G3P3. Parto normal, 39 semanas. Apgar: 9/10. Peso: 3.400g. Comprimento: 49cm. Sem intercorrências."
+5,"Lucas Gabriel Santos","2017-05-18","Marcos Santos","Renata Oliveira","Saúde Total Básico","G2P2. Parto cesárea, 38 semanas. Apgar: 9/9. Peso: 3.600g. Comprimento: 51cm. Sem intercorrências."
+6,"Isabela Costa","2019-09-09","Eduardo Costa","Fernanda Lima","Unimed Silver","G1P1. Parto normal, 37 semanas. Apgar: 8/9. Peso: 2.900g. Comprimento: 48cm. Prematuridade leve."
+7,"Matheus Henrique Ribeiro","2020-12-15","Paulo Ribeiro","Tatiane Martins","Saúde Mais","G2P1A1. Parto cesárea, 39 semanas. Apgar: 9/10. Peso: 3.450g. Comprimento: 50cm. Sem intercorrências."
+8,"Sofia Mendes","2018-02-28","André Mendes","Carolina Dias","Amil Básico","G1P1. Parto normal, 40 semanas. Apgar: 10/10. Peso: 3.700g. Comprimento: 52cm. Sem intercorrências."
+9,"Gabriel Oliveira","2021-06-21","José Oliveira","Mariana Costa","Unimed Gold","G2P2. Parto cesárea, 38 semanas. Apgar: 9/9. Peso: 3.300g. Comprimento: 49cm. Sem intercorrências."
+10,"Laura Beatriz Nunes","2019-04-30","Thiago Nunes","Aline Ferreira","Saúde Total Premium","G3P2A1. Parto normal, 39 semanas. Apgar: 9/10. Peso: 3.250g. Comprimento: 50cm. Sem intercorrências."
+11,"Eduardo Costa","1994-05-12","José Costa","Maria Oliveira","Unimed Bronze","Internação por bronquiolite aos 2 anos. Evolução favorável, sem sequelas."
+alergia
+ID,substancia,gravidade,observacao,status
+1,"Amendoim","Grave","Reação anafilática em contato com derivados.","Crônica (sem cura, apenas controle)"
+2,"Leite de vaca","Moderada","Intolerância, apresenta diarreia e dor abdominal.","Pode regredir com idade"
+3,"Pólen","Leve","Crises de rinite sazonal, controladas com anti-histamínico.","Controlável com medicação"
+4,"Penicilina","Grave","Histórico de reação cutânea intensa e dispneia.","Permanente, evitar uso"
+5,"Frutos do mar","Moderada","Prurido e urticária após ingestão.","Crônica, apenas evitar consumo"
+6,"Ovo","Leve","Reação cutânea leve, sem complicações respiratórias.","Pode regredir com idade"
+7,"Glúten","Moderada","Diagnóstico de doença celíaca confirmado por exames.","Permanente, dieta restritiva"
+8,"Dipirona","Grave","Reação anafilática em uso hospitalar prévio.","Permanente, contraindicado"
+9,"Poeira doméstica","Leve","Crises de bronquite leve em ambientes fechados.","Controlável com higiene/medicação"
+10,"Abelha","Grave","Reação sistêmica após picada, uso de adrenalina em emergência.","Permanente, risco vital"
+11,"Alergia a poeira","Leve","Crises de rinite na infância","Controlável com higiene/medicação"
+comorbidade
+ID,nome_doenca,diagnostico,tratamento
+1,"Asma","Diagnosticado em 2020, crises leves ocasionais.","Uso de broncodilatador em nebulização"
+2,"Rinite alérgica","Diagnosticado em 2021, sintomas sazonais.","Anti-histamínico oral"
+3,"Bronquite","Diagnosticado em 2022, episódios recorrentes.","Inalação com broncodilatador"
+4,"Dermatite atópica","Diagnosticado em 2023, lesões leves.","Pomada corticoide tópica"
+5,"Apendicite","Diagnosticado em 2024, cirurgia realizada.","Pós-operatório com antibiótico"
+6,"Prematuridade leve","Nascimento com 37 semanas, Apgar 8/9.","Acompanhamento pediátrico regular"
+7,"Asma","Diagnosticado em 2020, crises moderadas.","Nebulização e corticoide inalatório"
+8,"Tosse crônica","Investigação em andamento, suspeita de alergia.","Exames complementares solicitados"
+9,"Nenhuma","Sem comorbidades registradas.","-"
+10,"Nenhuma","Sem comorbidades registradas.","-"
+11,"Bronquiolite","Diagnosticado em 1996, internação hospitalar.","Nebulização com salbutamol e suporte respiratório"
+medicamento
+ID,medicamento,dosagem,frequencia,inicio,fim,observacao
+1,"Amoxicilina","250mg","8/8h","2025-02-02","2025-02-07","Tratamento de bronquiolite leve"
+1,"Azitromicina","500mg","1x/dia","2025-02-10","2025-02-14","Prescrição incoerente: antibiótico para pneumonia sem diagnóstico"
+2,"Soro oral","500ml","ad libitum","2025-03-11","2025-03-13,"Hidratação para gastroenterite"
+2,"Paracetamol","200mg"","6/6h","2025-03-11","2025-03-13,"Controle de febre"
+3,"Salbutamol spray","2 jatos","8/8h","2025-01-16","2025-01-30,"Controle de crise asmática"
+3,"Prednisona","20mg","1x/dia","2025-01-16","2025-01-20,"Corticoide para crise asmática"
+4,"Amoxicilina","500mg","8/8h","2025-02-21","2025-02-26,"Tratamento de otite média"
+5,"Ceftriaxona","1g","12/12h","2025-03-02","2025-03-08,"Tratamento de apendicite pós-cirurgia"
+5,"Dipirona","500mg","8/8h","2025-03-02","2025-03-05,"Controle de dor pós-operatória"
+6,"Salbutamol nebulização","2ml",'8/8h","2025-01-26","2025-01-29,"Tratamento de bronquiolite"
+6,"Paracetamol","200mg"","6/6h","2025-01-26","2025-01-29,"Controle de febre"
+7,"Loratadina","5mg",'1x/dia","2025-02-13","2025-02-20,"Controle de alergia alimentar"
+7,"Prednisona","10mg",'1x/dia","2025-02-13","2025-02-15,"Tratamento de reação alérgica"
+8,"Ceftriaxona",'1g","12/12h","2025-03-06","2025-03-11,"Tratamento de pneumonia"
+8,"Azitromicina","500mg","1x/dia","2025-03-06","2025-03-10,"Antibiótico alternativo para pneumonia"
+9,"Amoxicilina"","500mg","8/8h","2025-03-15","2025-03-18,"Tratamento de faringite"
+9,"Ibuprofeno","200mg","8/8h","2025-03-15","2025-03-17,"Controle de dor e febre"
+10,"Paracetamol","200mg","6/6h","2025-02-28","2025-03-01,"Controle de febre alta"
+10,"Soro oral","500ml","ad libitum","2025-02-28","2025-03-01,"Hidratação"
+11,"Salbutamol","2ml","8/8h","1996-03-10","1996-03-13","Nebulização"
+internacao_hospitalar
+ID,hospital,motivo,duracao,data_inicio,data_fim,tratamento
+1,"Hospital Central","Bronquiolite","5","2025-02-01","2025-02-06","Nebulização + antibiótico IV"
+2,"Hospital Infantil","Gastroenterite","3","2025-03-10","2025-03-13","Hidratação + dieta"
+3,"Hospital São Lucas","Crise asmática","4","2025-01-15","2025-01-19","Broncodilatador + corticoide"
+4,"Hospital Santa Casa","Otite complicada","2","2025-02-20","2025-02-22","Antibiótico oral"
+5,"Hospital Central","Apendicite","7","2025-03-01","2025-03-08","Cirurgia + antibiótico"
+6,"Hospital Infantil","Bronquiolite","4","2025-01-25","2025-01-29","Nebulização + suporte O2"
+7,"Hospital São Lucas","Reação alérgica","2","2025-02-12","2025-02-14","Antihistamínico + observação"
+8,"Hospital Santa Casa","Pneumonia","6","2025-03-05","2025-03-11","Antibiótico IV"
+9,"Hospital Central","Faringite","3","2025-03-14","2025-03-17","Antibiótico oral"
+10,"Hospital Infantil","Febre alta","2","2025-02-28","2025-03-01","Antitérmico + exames"
+11,"Hospital Central","Bronquiolite grave","7","1996-03-05","1996-03-12","Nebulização com salbutamol + suporte respiratório em UTI"
+antropometria
+ID,data_medicao,peso_kg,altura_cm,observacao_antropometria
+1,2019-01-05,3.55,51.0,Nascimento (Grave: Baixo Peso no 5º Ano)
+1,2020-01-05,9.80,76.5,1 ano
+1,2021-01-05,12.50,88.0,2 anos
+1,2022-01-05,14.50,96.0,3 anos
+1,2023-01-05,16.50,105.0,4 anos
+1,2024-01-05,18.00,111.0,Última visita registrada (5 anos - APENAS 2 VISITAS)
+1,2024-07-01,18.40,113.0,Visita faltante (SIMULAÇÃO DE DADOS P/ O FUTURO)
+2,2020-03-12,3.20,50.0,Nascimento
+2,2021-03-12,11.00,81.0,1 ano
+2,2022-03-12,13.50,90.5,2 anos
+2,2023-03-12,15.50,99.0,3 anos
+2,2024-03-12,17.50,107.0,Última visita registrada (4 anos - APENAS 2 VISITAS)
+2,2024-08-01,18.00,110.0,Visita faltante
+3,2018-07-25,3.80,52.0,Nascimento (ALTA FREQUÊNCIA)
+3,2019-01-25,7.00,66.0,Revisão 6 meses
+3,2019-07-25,11.50,80.0,1 ano
+3,2020-01-25,13.00,88.5,Revisão 1.5 anos
+3,2020-07-25,14.50,95.0,2 anos
+3,2021-01-25,15.50,100.0,Revisão
+3,2021-07-25,16.80,105.0,3 anos
+3,2022-01-25,17.50,108.0,Revisão
+3,2022-07-25,19.00,112.5,4 anos
+3,2023-01-25,20.00,116.0,Revisão
+3,2023-07-25,21.50,120.0,5 anos
+3,2024-01-25,22.50,123.0,Revisão
+3,2024-07-25,24.00,127.0,6 anos
+4,2021-11-02,3.40,49.0,Nascimento (FREQUÊNCIA PADRÃO)
+4,2022-03-02,9.00,74.0,Revisão 6 meses
+4,2022-07-02,11.00,82.0,Revisão
+4,2022-11-02,12.50,88.0,1 ano
+4,2023-03-02,14.00,94.0,Revisão
+4,2023-07-02,15.00,98.0,Revisão
+4,2023-11-02,16.00,102.0,2 anos
+4,2024-03-02,17.20,107.0,Revisão
+4,2024-07-02,18.50,110.0,Revisão
+4,2024-11-02,19.50,113.0,3 anos
+5,2017-05-18,3.60,51.0,Nascimento (ALTA FREQUÊNCIA)
+5,2018-05-18,12.00,80.0,1 ano
+5,2018-11-18,13.50,88.0,Revisão
+5,2019-05-18,15.00,94.0,2 anos
+5,2019-11-18,16.20,99.0,Revisão
+5,2020-05-18,17.50,104.0,3 anos
+5,2020-11-18,18.50,108.0,Revisão
+5,2021-05-18,20.00,113.0,4 anos
+5,2021-11-18,21.00,116.0,Revisão
+5,2022-05-18,22.50,120.0,5 anos
+5,2022-11-18,23.50,123.0,Revisão
+5,2023-05-18,25.00,127.0,6 anos
+5,2023-11-18,26.00,130.0,Revisão
+5,2024-05-18,27.50,133.0,7 anos
+5,2024-11-18,28.50,136.0,Revisão
+6,2019-09-09,2.90,48.0,Nascimento (Prematuridade Leve - FREQUÊNCIA PADRÃO)
+6,2020-01-09,5.50,60.0,Revisão
+6,2020-05-09,8.00,70.0,Revisão
+6,2020-09-09,10.50,78.0,1 ano
+6,2021-01-09,12.00,85.0,Revisão
+6,2021-05-09,13.50,91.0,Revisão
+6,2021-09-09,15.00,96.0,2 anos
+6,2022-01-09,16.20,101.0,Revisão
+6,2022-05-09,17.50,105.0,Revisão
+6,2022-09-09,18.80,108.5,3 anos
+6,2023-01-09,19.50,111.0,Revisão
+6,2023-05-09,20.50,114.0,Revisão
+6,2023-09-09,21.50,117.0,4 anos
+6,2024-01-09,22.50,120.0,Revisão
+6,2024-05-09,23.50,123.0,Revisão
+6,2024-09-09,24.50,126.0,5 anos
+7,2020-12-15,3.45,50.0,Nascimento (FREQUÊNCIA PADRÃO)
+7,2021-04-15,7.50,68.0,Revisão
+7,2021-08-15,10.00,78.0,Revisão
+7,2021-12-15,11.50,86.0,1 ano
+7,2022-04-15,13.00,92.0,Revisão
+7,2022-08-15,14.50,98.0,Revisão
+7,2022-12-15,16.00,104.0,2 anos
+7,2023-04-15,17.20,109.0,Revisão
+7,2023-08-15,18.50,113.0,Revisão
+7,2023-12-15,19.80,117.0,3 anos
+7,2024-04-15,21.00,120.0,Revisão
+7,2024-08-15,22.00,123.0,Revisão
+7,2024-12-15,23.00,126.0,4 anos
+8,2018-02-28,3.70,52.0,Nascimento (FREQUÊNCIA PADRÃO)
+8,2018-06-28,8.00,70.0,Revisão
+8,2018-10-28,10.50,80.0,Revisão
+8,2019-02-28,12.00,88.0,1 ano
+8,2019-06-28,13.50,93.0,Revisão
+8,2019-10-28,14.80,98.0,Revisão
+8,2020-02-28,16.00,102.0,2 anos
+8,2020-06-28,17.00,105.0,Revisão
+8,2020-10-28,18.50,109.0,Revisão
+8,2021-02-28,19.80,113.0,3 anos
+8,2021-06-28,21.00,116.0,Revisão
+8,2021-10-28,22.20,119.0,Revisão
+8,2022-02-28,23.50,122.0,4 anos
+8,2022-06-28,24.50,124.0,Revisão
+8,2022-10-28,25.80,127.0,Revisão
+8,2023-02-28,27.00,130.0,5 anos
+8,2023-06-28,28.00,132.0,Revisão
+8,2023-10-28,29.20,134.0,Revisão
+8,2024-02-28,30.50,136.0,6 anos
+8,2024-06-28,31.50,138.0,Revisão
+8,2024-10-28,32.80,140.0,Revisão
+9,2021-06-21,3.30,49.0,Nascimento (FREQUÊNCIA PADRÃO)
+9,2021-10-21,7.00,65.0,Revisão
+9,2022-02-21,9.00,76.0,Revisão
+9,2022-06-21,11.50,84.0,1 ano
+9,2022-10-21,13.00,90.0,Revisão
+9,2023-02-21,14.50,96.0,Revisão
+9,2023-06-21,16.00,101.0,2 anos
+9,2023-10-21,17.20,105.0,Revisão
+9,2024-02-21,18.50,109.0,Revisão
+9,2024-06-21,19.80,113.0,3 anos
+9,2024-10-21,21.00,117.0,Revisão
+10,2019-04-30,3.25,50.0,Nascimento (FREQUÊNCIA PADRÃO)
+10,2019-08-30,7.00,68.0,Revisão
+10,2019-12-30,9.50,78.0,Revisão
+10,2020-04-30,11.50,86.0,1 ano
+10,2020-08-30,13.00,91.0,Revisão
+10,2020-12-30,14.50,96.0,Revisão
+10,2021-04-30,16.00,101.0,2 anos
+10,2021-08-30,17.20,105.0,Revisão
+10,2021-12-30,18.50,109.0,Revisão
+10,2022-04-30,19.80,113.0,3 anos
+10,2022-08-30,21.00,116.0,Revisão
+10,2022-12-30,22.20,119.0,Revisão
+10,2023-04-30,23.50,122.0,4 anos
+10,2023-08-30,24.50,124.0,Revisão
+10,2023-12-30,25.80,127.0,Revisão
+10,2024-04-30,27.00,130.0,5 anos
+10,2024-08-30,28.00,132.0,Revisão
+10,2024-12-30,29.20,134.0,Revisão
+imunizacao
+2,"BCG","2025-01-08","L223","Aplicada corretamente"
+2,"Hepatite B","2025-01-12","L224","Aplicada corretamente"
+2,"Tríplice Viral","2025-02-20","L225","Aplicada corretamente"
+3,"BCG","2025-01-09","L323","Aplicada corretamente"
+3,"Hepatite B","2025-01-15","L324","Aplicada corretamente"
+3,"Tríplice Viral","2025-02-18","L325","Aplicada corretamente"
+4,"BCG","2025-01-07","L423","Aplicada corretamente"
+4,"Hepatite B","2025-01-14","L424","Aplicada corretamente"
+4,"Tríplice Viral","2025-02-22","L425","Aplicada corretamente"
+5,"BCG","2025-01-06","L523","Aplicada corretamente"
+5,"Hepatite B","2025-01-13","L524","Aplicada corretamente"
+5,"Tríplice Viral","2025-02-19","L525","Aplicada corretamente"
+6,"BCG","2025-01-11","L623","Aplicada corretamente"
+6,"Hepatite B","2025-01-16","L624","Aplicada corretamente"
+6,"Tríplice Viral","2025-02-21","L625","Aplicada corretamente"
+7,"BCG","2025-01-12","L723","Aplicada corretamente"
+7,"Hepatite B","2025-01-18","L724","Aplicada corretamente"
+7,"Tríplice Viral","2025-02-23","L725","Aplicada corretamente"
+8,"BCG","2025-01-10","L823","Aplicada corretamente"
+8,"Hepatite B","2025-01-17","L824","Aplicada corretamente"
+8,"-- faltou Tríplice Viral",,,,
+8,"-- faltou Pneumocócica",,,,
+9,"BCG","2025-01-09","L923","Aplicada corretamente"
+9,"Hepatite B","2025-01-15","L924","Aplicada corretamente"
+9,"Tríplice Viral","2025-02-24","L925","Aplicada corretamente"
+10,"BCG","2025-01-08","L1023","Aplicada corretamente"
+10,"Hepatite B","2025-01-14","L1024","Aplicada corretamente"
+10,"Tríplice Viral","2025-02-25","L1025","Aplicada corretamente"

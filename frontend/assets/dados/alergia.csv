@@ -1,0 +1,13 @@
+ID,substancia,gravidade,observacao,status
+1,"Amendoim","grave","Reação anafilática em contato com derivados.","Crônica (sem cura, apenas controle)"
+2,"Leite de vaca","moderada","Intolerância, apresenta diarreia e dor abdominal.","Pode regredir com idade"
+3,"Pólen","leve","Crises de rinite sazonal, controladas com anti-histamínico.","Controlável com medicação"
+4,"Penicilina","grave","Histórico de reação cutânea intensa e dispneia.","Permanente, evitar uso"
+5,"Frutos do mar","moderada","Prurido e urticária após ingestão.","Crônica, apenas evitar consumo"
+6,"Ovo","leve","Reação cutânea leve, sem complicações respiratórias.","Pode regredir com idade"
+7,"Glúten","moderada","Diagnóstico de doença celíaca confirmado por exames.","Permanente, dieta restritiva"
+8,"Dipirona","grave","Reação anafilática em uso hospitalar prévio.","Permanente, contraindicado"
+9,"Poeira doméstica","leve","Crises de bronquite leve em ambientes fechados.","Controlável com higiene/medicação"
+10,"Abelha","grave","Reação sistêmica após picada, uso de adrenalina em emergência.","Permanente, risco vital"
+11,,,,
+12,,,,

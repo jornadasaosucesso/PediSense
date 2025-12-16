@@ -1,0 +1,13 @@
+ID,nome_doenca,diagnostico,tratamento
+1,"Asma","Diagnosticado em 2020, crises leves ocasionais.","Uso de broncodilatador em nebulização"
+2,"Rinite alérgica","Diagnosticado em 2021, sintomas sazonais.","Anti-histamínico oral"
+3,"Bronquite","Diagnosticado em 2022, episódios recorrentes.","Inalação com broncodilatador"
+4,"Dermatite atópica","Diagnosticado em 2023, lesões leves.","Pomada corticoide tópica"
+5,"Apendicite","Diagnosticado em 2024, cirurgia realizada.","Pós-operatório com antibiótico"
+6,"Prematuridade leve","Nascimento com 37 semanas, Apgar 8/9.","Acompanhamento pediátrico regular"
+7,"Asma","Diagnosticado em 2020, crises moderadas.","Nebulização e corticoide inalatório"
+8,"Tosse crônica","Investigação em andamento, suspeita de alergia.","Exames complementares solicitados"
+9,"Nenhuma","Sem comorbidades registradas.","-"
+10,"Nenhuma","Sem comorbidades registradas.","-"
+11,,,,
+12,,,,

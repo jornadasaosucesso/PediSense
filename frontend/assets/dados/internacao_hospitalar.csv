@@ -1,0 +1,13 @@
+ID,hospital,motivo,duracao,data_inicio,data_fim,tratamento
+1,"Hospital Central","Bronquiolite","5","2025-02-01","2025-02-06","Nebulização + antibiótico IV"
+2,"Hospital Infantil","Gastroenterite","3","2025-03-10","2025-03-13","Hidratação + dieta"
+3,"Hospital São Lucas","Crise asmática","4","2025-01-15","2025-01-19","Broncodilatador + corticoide"
+4,"Hospital Santa Casa","Otite complicada","2","2025-02-20","2025-02-22","Antibiótico oral"
+5,"Hospital Central","Apendicite","7","2025-03-01","2025-03-08","Cirurgia + antibiótico"
+6,"Hospital Infantil","Bronquiolite","4","2025-01-25","2025-01-29","Nebulização + suporte O2"
+7,"Hospital São Lucas","Reação alérgica","2","2025-02-12","2025-02-14","Antihistamínico + observação"
+8,"Hospital Santa Casa","Pneumonia","6","2025-03-05","2025-03-11","Antibiótico IV"
+9,"Hospital Central","Faringite","3","2025-03-14","2025-03-17","Antibiótico oral"
+10,"Hospital Infantil","Febre alta","2","2025-02-28","2025-03-01","Antitérmico + exames"
+11,"Hospital Central","Bronquiolite grave","7","1996-03-05","1996-03-12","Nebulização com salbutamol + suporte respiratório em UTI"
+12,,,,

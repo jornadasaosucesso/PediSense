@@ -1,0 +1,19 @@
+# Dependências
+/node_modules
+/dist
+/build
+
+# Arquivos de log e cache
+npm-debug.log*
+.DS_Store
+*.env
+
+
+# 1. Inicializa o Git no seu projeto
+
+
+# 2. Adiciona todos os arquivos rastreáveis (exceto os do .gitignore)
+git add .
+
+# 3. Cria o primeiro commit
+git commit -m "Initial commit: Projeto com autenticacao e fluxo de carga assincrona"

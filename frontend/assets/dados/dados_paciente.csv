@@ -1,0 +1,13 @@
+ID,nome,data_nascimento,filiacao_pai,filiacao_mae,plano_saude,dados_nascimento
+1,"Pedro Henrique Matias","2019-01-05","Roberto Matias","Ana Maria da Silva","Saúde Total Premium","G3P2A1 (Terceira gestação, Segundo parto, Um aborto). Parto Cesárea eletiva, 39 semanas. Apgar: 9/10. Peso: 3.550g. Comprimento: 51cm. Sem intercorrências neonatais."
+2,"Maria Eduarda Silva","2020-03-12","Carlos Silva","Juliana Rocha","Unimed Gold","G2P2. Parto normal, 38 semanas. Apgar: 10/10. Peso: 3.200g. Comprimento: 50cm. Sem intercorrências."
+3,"João Pedro Almeida","2018-07-25","Fernando Almeida","Patrícia Souza","Saúde Mais","G1P1. Parto cesárea, 40 semanas. Apgar: 8/9. Peso: 3.800g. Comprimento: 52cm. Pequena icterícia neonatal."
+4,"Ana Clara Fernandes","2021-11-02","Ricardo Fernandes","Camila Torres","Amil Premium","G3P3. Parto normal, 39 semanas. Apgar: 9/10. Peso: 3.400g. Comprimento: 49cm. Sem intercorrências."
+5,"Lucas Gabriel Santos","2017-05-18","Marcos Santos","Renata Oliveira","Saúde Total Básico","G2P2. Parto cesárea, 38 semanas. Apgar: 9/9. Peso: 3.600g. Comprimento: 51cm. Sem intercorrências."
+6,"Isabela Costa","2019-09-09","Eduardo Costa","Fernanda Lima","Unimed Silver","G1P1. Parto normal, 37 semanas. Apgar: 8/9. Peso: 2.900g. Comprimento: 48cm. Prematuridade leve."
+7,"Matheus Henrique Ribeiro","2020-12-15","Paulo Ribeiro","Tatiane Martins","Saúde Mais","G2P1A1. Parto cesárea, 39 semanas. Apgar: 9/10. Peso: 3.450g. Comprimento: 50cm. Sem intercorrências."
+8,"Sofia Mendes","2018-02-28","André Mendes","Carolina Dias","Amil Básico","G1P1. Parto normal, 40 semanas. Apgar: 10/10. Peso: 3.700g. Comprimento: 52cm. Sem intercorrências."
+9,"Gabriel Oliveira","2021-06-21","José Oliveira","Mariana Costa","Unimed Gold","G2P2. Parto cesárea, 38 semanas. Apgar: 9/9. Peso: 3.300g. Comprimento: 49cm. Sem intercorrências."
+10,"Laura Beatriz Nunes","2019-04-30","Thiago Nunes","Aline Ferreira","Saúde Total Premium","G3P2A1. Parto normal, 39 semanas. Apgar: 9/10. Peso: 3.250g. Comprimento: 50cm. Sem intercorrências."
+11,"Luana Maria Santos","2020-05-30","Paulo Barbosa","Camila Viana","Unimed","G2P2A2. Parto cesárea, 39 semanas. Apgar: 9/10. Peso: 3.450g. Comprimento: 50cm. Sem intercorrências."
+12,"maria luana",,,,,,

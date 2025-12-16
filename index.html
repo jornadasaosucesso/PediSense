@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title> </title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        :root {
+            --bg: #000;
+            --fg: #fff;
+            --accent: #00e5ff;
+            --accent2: #ff3d77;
+        }
+        * { box-sizing: border-box; }
+        html, body {
+            height: 100%;
+            margin: 0;
+            background: var(--bg);
+            color: var(--fg);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Controle dos estágios */
+        .stage {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: none; /* Inicia todos ocultos */
+        }
+        .stage.active { display: flex; /* Exibe o ativo */ }
+        
+        /* Força cores claras para conteúdo do .stage (após o login preto) */
+        .stage {
+            background-color:  #f0f8ff !important; /* azul claro */
+        }
+        .stage * {
+            color: #222222 !important;
+        }
+
+        /* Estilos do Login Matrix */
+        #login-matrix {
+            background-color: black;
+            position: relative;
+            /* Remove height/width fixos se .stage já faz isso */
+            overflow: hidden; 
+        }
+        .matrix-field {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            opacity: 0.25;
+            background:
+                radial-gradient(circle at 10% 10%, #00e5ff22 0 12%, transparent 13%),
+                radial-gradient(circle at 80% 30%, #ff3d7722 0 10%, transparent 11%),
+                radial-gradient(circle at 30% 80%, #00e5ff22 0 11%, transparent 12%);
+            z-index: 1;
+        }
+        .question-stream {
+            position: absolute;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            height: 200%;
+            color: var(--accent);
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: 2px;
+            opacity: 0.25;
+            white-space: pre;
+            animation: scrollDown 10s linear infinite;
+            z-index: 1;
+        }
+        @keyframes scrollDown {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(100%); }
+        }
+        /* ... (Mantenha outros estilos de Login/Botão/Input se precisar) ... */
+        .login-card {
+            position: absolute;
+            inset: 0;
+            display: grid;
+            place-items: center;
+            z-index: 2;
+            padding: 24px;
+        }
+        /* Garante que o vídeo e a saudação ocupem a tela inteira */
+        #video-container,
+        #saudacao-container {
+            display: flex; /* Garante que o .stage.active funcione */
+            justify-content: center;
+            align-items: center;
+        }
+        #splash-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        #prompt {
+            position: absolute;
+            bottom: 24px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: calc(100% - 48px);
+            max-width: 960px;
+            text-align: center;
+            font-size: 1.1rem;
+            color: #e8e8e8;
+            text-shadow: 0 2px 12px rgba(0,0,0,0.6);
+            background: rgba(0,0,0,0.35);
+            padding: 10px 14px;
+            border-radius: 10px;
+            border: 1px solid #2a2a2a;
+        }
+        #main-app {
+            padding: 24px;
+            flex-direction: column; /* Organiza o conteúdo verticalmente */
+            align-items: flex-start; /* Alinha o conteúdo ao topo/esquerda */
+            justify-content: flex-start;
+        }
+        #mic-status {
+            margin-top: 16px;
+            font-size: 1.1rem;
+        }
+        
+        /* Estilos dos Modais (Repetido para garantir que o modal de info funcione) */
+         .modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 99999;
+        }
+        .modal.hidden {
+            display: none;
+        }
+        .modal-content {
+            background: #fefefe;
+            color: #000;
+            padding: 30px;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="login-matrix" class="stage active">
+        <div class="matrix-field"></div>
+        <div class="question-stream">
+    ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 
+   ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 
+     ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 
+       ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 
+         ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 
+           ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 
+             ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 
+             ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 ⚕ ☤ 🜃 🜄 🜁 🜂 🜍 🜎 🜏 
+        </div>
+
+        <div class="login-card">
+            <form id="login-form" class="login-panel">
+                <h1 class="login-title"> </h1>
+                <p class="login-sub"> </p>
+
+                <input type="text" id="medico-nome" class="input" placeholder="Seu Nome" required>
+                <input type="password" id="medico-codigo" class="input" placeholder="Seu Código" required>
+
+                <button type="submit" class="btn">ENTRAR</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="video-container" class="stage">
+        <video id="splash-video" src="assets/video/PediSense.mp4" autoplay loop muted></video>
+        <div id="prompt">&lt;TECLE QUALQUER TECLA PARA CONTINUAR&gt;</div>
+    </div>
+
+    <div id="main-app" class="stage">
+        <h1>Menu Principal</h1>
+
+        <div id="mic-status"></div>
+
+        <div id="menu-janela" class="hidden"></div>
+        <div id="dados-container" class="hidden"></div>
+    </div>
+
+    <div id="modal-paciente" class="modal hidden">
+        <div class="modal-content">
+            <button id="close-paciente" class="close">Fechar</button>
+            <div id="modal-body-paciente"></div>
+        </div>
+    </div>
+
+    <div id="info-modal" class="modal hidden">
+        <div class="modal-content">
+            <button id="close-modal" class="close">Fechar</button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="js/libs/papaparse.min.js"></script>
+    <script src="js/main.js"></script>    
+    <script src="js/speech.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/ui.js"></script>
+</body>
+</html>

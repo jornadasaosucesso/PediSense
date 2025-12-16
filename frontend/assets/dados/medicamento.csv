@@ -1,0 +1,22 @@
+ID,medicamento,dosagem,frequencia,inicio,fim,observacao
+1,"Amoxicilina","250mg","8/8h","2025-02-02","2025-02-07","Tratamento de bronquiolite leve"
+1,"Azitromicina","500mg","1x/dia","2025-02-10","2025-02-14","Prescrição incoerente: antibiótico para pneumonia sem diagnóstico"
+2,"Soro oral","500ml","ad libitum","2025-03-11","2025-03-13,"Hidratação para gastroenterite"
+2,"Paracetamol","200mg"","6/6h","2025-03-11","2025-03-13,"Controle de febre"
+3,"Salbutamol spray","2 jatos","8/8h","2025-01-16","2025-01-30,"Controle de crise asmática"
+3,"Prednisona","20mg","1x/dia","2025-01-16","2025-01-20,"Corticoide para crise asmática"
+4,"Amoxicilina","500mg","8/8h","2025-02-21","2025-02-26,"Tratamento de otite média"
+5,"Ceftriaxona","1g","12/12h","2025-03-02","2025-03-08,"Tratamento de apendicite pós-cirurgia"
+5,"Dipirona","500mg","8/8h","2025-03-02","2025-03-05,"Controle de dor pós-operatória"
+6,"Salbutamol nebulização","2ml",'8/8h","2025-01-26","2025-01-29,"Tratamento de bronquiolite"
+6,"Paracetamol","200mg"","6/6h","2025-01-26","2025-01-29,"Controle de febre"
+7,"Loratadina","5mg",'1x/dia","2025-02-13","2025-02-20,"Controle de alergia alimentar"
+7,"Prednisona","10mg",'1x/dia","2025-02-13","2025-02-15,"Tratamento de reação alérgica"
+8,"Ceftriaxona",'1g","12/12h","2025-03-06","2025-03-11,"Tratamento de pneumonia"
+8,"Azitromicina","500mg","1x/dia","2025-03-06","2025-03-10,"Antibiótico alternativo para pneumonia"
+9,"Amoxicilina"","500mg","8/8h","2025-03-15","2025-03-18,"Tratamento de faringite"
+9,"Ibuprofeno","200mg","8/8h","2025-03-15","2025-03-17,"Controle de dor e febre"
+10,"Paracetamol","200mg","6/6h","2025-02-28","2025-03-01,"Controle de febre alta"
+10,"Soro oral","500ml","ad libitum","2025-02-28","2025-03-01,"Hidratação"
+11,,,,
+12,,,,

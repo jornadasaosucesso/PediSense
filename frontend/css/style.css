@@ -1,0 +1,173 @@
+/* Estilo Base para os Estágios */
+.stage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f8ff; /* Fundo claro, como na sua imagem */
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hidden {
+    display: none !important;
+    opacity: 0;
+}
+
+.active {
+    display: flex;
+    opacity: 1;
+}
+
+/* Estilo específico para o Login Matrix */
+#login-matrix h1 {
+    font-size: 5em;
+    color: #008cba; /* Azul PediSense */
+    animation: pulse 1.5s infinite; /* Efeito Matrix pulsante */
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.05); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.8; }
+}
+
+/* Oculta o vídeo inicialmente para dar foco ao Wake Word */
+/* --- ESTILO PARA IMAGEM E VÍDEO (SPLASH SCREEN) --- */
+#splash-image {
+    max-width: 400px; /* Aumenta o tamanho da imagem */
+    height: auto;
+    margin-bottom: 20px;
+    /* Certifica que a imagem se comporta como um bloco centralizado */
+    display: block; 
+}
+
+/* --- ESTILO DA TELA PRINCIPAL DO APP --- */
+#main-app {
+    /* Herda o posicionamento do .stage, mas ajustamos a organização interna */
+    padding: 20px;
+    align-items: flex-start; /* Alinha o conteúdo (texto e menu) no topo, e não no centro da tela */
+    justify-content: flex-start; 
+    box-sizing: border-box;
+    overflow-y: auto; /* Permite rolar se o conteúdo for muito grande */
+}
+
+/* Estilos para a Saudação e o Alerta de Risco */
+#saudacao-container {
+    margin-bottom: 20px;
+    text-align: left;
+    width: 100%;
+    max-width: 900px; 
+}
+
+/* --- ESTILO DO CONTAINER DO MENU (O QUE FALTAVA!) --- */
+#menu-janela {
+    width: 100%;
+    padding: 20px 0;
+    margin: 0 auto;
+    max-width: 900px; 
+}
+
+/* --- ESTILO DA GRADE DE BOTÕES (para o Menu aparecer) --- */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 Colunas */
+    gap: 15px;
+    width: 100%;
+}
+
+.menu-item {
+    /* Estilo do botão conforme definido anteriormente */
+    background-color: #008cba; 
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    height: 100px;
+    cursor: pointer;
+    font-size: 1.1em;
+    text-align: center;
+}
+body {
+  background-color: #ffffff; /* fundo branco */
+  color: #222222; /* texto escuro visível */
+  font-family: Arial, sans-serif;
+}
+
+.menu-item,
+button,
+h1, h2, h3, p, li {
+  color: #222222; /* força texto escuro */
+}
+
+#video-container.stage.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+#splash-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+#saudacao-container.stage.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f8ff;
+  color: #222222;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* --- ESTILO ESPECÍFICO PARA O MODAL DO PACIENTE --- */
+#modal-paciente {
+    position: fixed;
+    z-index: 10000;
+    display: flex; /* Se a classe 'hidden' foi removida */
+}
+
+
+#modal-body-paciente {
+    /* Estilo para a caixa branca/azul que contém o conteúdo */
+    background-color: white; 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 90%;
+}
+.modal {
+    /* OBRIGATÓRIO: Posiciona o modal em relação à janela do navegador */
+    position: fixed; 
+    
+    /* OBRIGATÓRIO: Garante que o modal fique acima de todos os outros elementos */
+    z-index: 10000; 
+    
+    /* Garante que ocupe a tela toda */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* Centralização e overlay (fundo escurecido) */
+    background-color: rgba(0, 0, 0, 0.7); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para a área de conteúdo do modal */
+.modal-content {
+    background-color: #fefefe;
+    padding: 30px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
