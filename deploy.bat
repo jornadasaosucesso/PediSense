@@ -24,7 +24,7 @@ REM ====================================================
 REM 2. Atualiza o repositório local com rebase
 echo.
 echo 🔄 Sincronizando com 'main' remoto...
-git pull --rebase origin main
+git pull --rebase origin master
 
 IF %ERRORLEVEL% NEQ 0 (
     REM ====================================================
@@ -69,7 +69,7 @@ if %ERRORLEVEL% EQU 0 (
 echo ✅ Commit preparado
 
 REM 5. Envia para o GitHub
-git push origin main
+git push origin master
 if %ERRORLEVEL% NEQ 0 (
     echo ⚠️ Push falhou! Verifique conflitos
 )
