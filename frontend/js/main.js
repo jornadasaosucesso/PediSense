@@ -6,6 +6,28 @@
 const STATIC_CODE = "Marc1234";
 let doctorName = '';
 let gatilhoCSV = [];
+// ===================================================
+// 🟢 NOVO: Suporte a Toque (Touch) para avançar o vídeo
+// ===================================================
+
+document.addEventListener('touchstart', (e) => {
+    // Pega o container do vídeo
+    const videoContainer = document.getElementById('video-container');
+
+    // Verifica se o container do vídeo existe E se ele é o estágio ATIVO
+    if (videoContainer && videoContainer.classList.contains('active')) {
+        // Previne o comportamento padrão do toque (como zoom ou rolagem)
+        e.preventDefault(); 
+        
+        // Chama a função que faz a transição para o próximo estágio
+        // IMPORTANTE: Assumimos que a função de transição se chama 'nextStage()'
+        if (typeof nextStage === 'function') {
+            nextStage();
+        } else {
+            console.error('Função nextStage() não encontrada.');
+        }
+    }
+});
 
 const global = {
     pacienteAtual: { id: null, nome_completo: null }, 
